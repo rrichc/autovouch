@@ -4,13 +4,25 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "tachyons";
-import Button from "./components/button";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AuditorConfig from './components/auditorConfig'
+import Review from './components/review'
+import Client from './components/client.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    <Button />
+
+    <Router>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/auditor-config" component={AuditorConfig} />
+        <Route path="/review" component={Review} />
+        <Route path="/client-docs" component={Client} />
+        
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
