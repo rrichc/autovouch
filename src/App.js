@@ -5,13 +5,15 @@ import Button from "react-bootstrap/Button";
 
 // import { Container } from "react-bootstrap";
 
+
 function App() {
   return (
+
     <article class="vh-100 dt center">
       <div class="dtc v-mid tc white ph3 ph4-l">
         <h1 class="f6 f2-m f-subheadline-l fw6 tc">audit app</h1>
         <>
-          <a href="client-docs">
+          <a href="/client-docs">
             <span class="p-5">
               <Button variant="dark">Client</Button>{" "}
             </span>
@@ -26,6 +28,7 @@ function App() {
         </>
       </div>
     </article>
+
   );
 }
 
