@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  position: relative;
+
+  
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 144px;
+  line-height: 16%;
+  /* or 23px */
+  
+  display: flex;
+
+  text-transform: uppercase;
+  
+  color: #000000;
+  
 }
