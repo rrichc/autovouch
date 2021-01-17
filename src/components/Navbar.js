@@ -7,13 +7,13 @@ const navbar = () => {
     return (
         <Navbar bg="light" expand="lg">
             <LinkContainer to="/">
-  <Navbar.Brand>!!!APPNAME</Navbar.Brand>
+  <Navbar.Brand>Audit App</Navbar.Brand>
   </LinkContainer>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
         <LinkContainer to="/auditor-config">
-      <Nav.Link>AuditorConfig</Nav.Link>
+      <Nav.Link>Configuration</Nav.Link>
       </LinkContainer>
       <LinkContainer to="/review">
       <Nav.Link>Review</Nav.Link>

@@ -5,12 +5,10 @@ export default class CSVReader2 extends Component {
     handleOnDrop = (data) => {
         console.log('---------------------------');
         console.log(data);
-          fetch('http://localhost:3000/pbcupload',{
+          fetch('http://localhost:3000/pdfupload',{
                 method: 'post',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({
-                    data
-                })
+              
+                
             })
           .then((res) => res.text())
           .then((data) => console.log(data)); // output: {}
@@ -31,14 +29,14 @@ export default class CSVReader2 extends Component {
   render() {
     return (
       <>
-        <h5>Upload CSV form</h5>
+        <h5>Upload PDF audit forms</h5>
         <CSVReader
           onDrop={this.handleOnDrop}
           onError={this.handleOnError}
           addRemoveButton
           onRemoveFile={this.handleOnRemoveFile}
         >
-          <span>Drop CSV file here or click to upload.</span>
+          <span>Drop PDF file here or click to upload.</span>
         </CSVReader>
       </>
     );
