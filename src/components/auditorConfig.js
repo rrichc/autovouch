@@ -7,8 +7,8 @@ const AuditorConfig = () => {
     return (
         <div>
             <Navbar/>
-            <h1>This is Auditor Configuration Page</h1>
-            <FileReader/>
+            
+            <div class="pa6 center"><FileReader/></div>
         </div>
     )
 }
