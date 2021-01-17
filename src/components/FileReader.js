@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { CSVReader } from 'react-papaparse';
-import axios from 'axios';
 
 export default class CSVReader2 extends Component {
   handleOnDrop = (data) => {
     console.log('---------------------------');
     console.log(data);
-    axios.post('http://localhost:8000/pbcupload', data)
-    .then(res => console.log(res.data));
+    fetch('http://localhost:8080/pbcupload', data)
+      .then((res) => res.text())
+      .then((data) => console.log(data)); // output: {}
     console.log('---------------------------');
 
   };
