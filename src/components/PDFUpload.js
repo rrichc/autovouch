@@ -36,7 +36,7 @@ export default class CSVReader2 extends Component {
           addRemoveButton
           onRemoveFile={this.handleOnRemoveFile}
         >
-          <span>Drop PDF file here or click to upload.</span>
+          <span>Drop PDF file(s) here or click to upload.</span>
         </CSVReader>
       </>
     );
